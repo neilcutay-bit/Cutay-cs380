@@ -1,0 +1,21 @@
+var age = 65;
+var is_smoking = true;
+var has_medical_condition = false;
+
+if (age < 18) {
+  print "Ineligible";
+} else {
+  if (age > 60) {
+    print "high risk";
+  } else {
+    if (is_smoking) {
+      if (has_medical_condition) {
+        print "high risk";
+      } else {
+        print "low risk";
+      }
+    } else {
+      print "low risk";
+    }
+  }
+}
